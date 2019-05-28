@@ -1,0 +1,151 @@
+\documentclass{article} 
+\usepackage[margin=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{Alegreya}
+\usepackage{tikz,tikz-cd}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+}
+
+\renewcommand{\section}[1]{\vspace{1.5em}{\huge \textsc{#1}}\vspace{1em}}
+\renewcommand{\subsection}[1]{{\large \textbf{#1}}\vspace{0.5em}}
+\newcommand{\descdate}[2]{#1 \hfill #2\vspace{0.5em}}
+
+\newenvironment{row}{\vspace{0.75em}\begin{minipage}[t]{\textwidth}}{\end{minipage}\vspace{0.75em}}
+\newenvironment{column2}{%
+  \begin{minipage}[t]{0.5\textwidth}%
+    \begin{minipage}[t]{0.9\textwidth}}{%
+    \end{minipage}%
+  \end{minipage}}
+\newenvironment{column3}{%
+  \begin{minipage}[t]{0.333\textwidth}%
+    \begin{minipage}[t]{0.9\textwidth}}{%
+    \end{minipage}%
+  \end{minipage}}
+  
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+
+\begin{document}
+
+{\huge Owen Lynch} \hfill \texttt{\href{mailto:owen\_lynch1@brown.edu}{owen\_lynch1@brown.edu}}
+
+\hrule
+
+\section{Education}
+
+\begin{row}
+  \begin{column2}
+    \subsection{Brown University}
+
+    \descdate{Pursuing Bachelor of Science in Math}{May 2020}
+
+    Selected Courses: Topology (Graduate), Complex Analysis, Reading Program in Category Theory, Topics in Abstract Algebra, Functions of Several Variables, Partial Differential Equations, Probability, Algorithms
+  \end{column2}
+  \begin{column2}
+    \subsection{Commonwealth School}
+
+    \descdate{Diploma}{June 2016}
+
+    Selected Courses: Abstract Algebra, Theoretical Calculus, Mathematical Logic, Introduction to AI, Introduction to Compilers
+  \end{column2}
+\end{row}
+
+\section{Experience}
+
+\begin{row}
+  \begin{column2}
+    \subsection{Tesla Motors}
+
+    \descdate{Firmware Intern}{Summer 2018}
+
+    Developed software in Haskell to facilitate development of internal car network. Designed new algorithm for tracking redundancy and failure-resilience in communication components.
+  \end{column2}
+  \begin{column2}
+    \subsection{New England Complex Systems Institute}
+
+    \descdate{Student Researcher}{2016-2017}
+
+    Researched and implemented novel techniques in image processing. Wrote large-scale data scraping infrastructure. Helped to migrate large amounts of data. Studied novel information theoretic methods for modeling changes in complex systems. Worked in Python, R, and C.%
+  \end{column2}
+\end{row}
+
+\begin{row}
+  \begin{column2}
+    \subsection{Brown CS Department}
+
+    \descdate{Algorithms TA}{Fall 2018}
+  \end{column2}
+  \begin{column2}
+    \subsection{Brown Math Department}
+
+    \descdate{Math Resource Center Tutor}{2017}
+  \end{column2}
+\end{row}
+
+\section{Projects}
+
+\begin{row}
+  \begin{column3}
+    \subsection{HackMIT 2017 ``Pathways''}
+
+    Simulation of traffic routing algorithm to evacuate natural disasters. Won ``Hack with Most Startup Potential'' (prize: a trip to Las Vegas), ``Best Use of Location Data,'' and ``Moonshot.'' Written in Python.
+  \end{column3}
+  \begin{column3}
+    \subsection{Interactive Graph Editor}
+
+    Keyboard driven extensible graph editor, purpose is to explore nonlinear syntax for programming language design. Written in Haskell. \texttt{\href{https://github.com/olynch/ige}{olynch/ige}}
+  \end{column3}
+  \begin{column3}
+    \subsection{Not Gonna Happen}
+
+    Web-based metronome that tracks your practicing habits. If you don't practice every day it's not gonna happen! Written in Haskell. \texttt{\href{https://github.com/olynch/notgonnahappen}{olynch/notgonnahappen}}
+  \end{column3}
+\end{row}
+
+\section{Technical Proficiencies}
+
+\newcommand{\proficiency}[2]{%
+  \begin{minipage}[t]{1.3cm}
+    \centering
+
+    #1
+    
+    \vspace{1em}
+
+    {\large \textbf{#2}}
+  \end{minipage}\hspace{1em}}
+
+\newcommand{\proficiencyext}[2]{\proficiency{\def\svgwidth{\textwidth} \input{#1}}{#2}}
+
+\proficiencyext{haskell.pdf_tex}{Haskell}
+\proficiencyext{c.pdf_tex}{C/C++}
+\proficiencyext{python.pdf_tex}{Python}
+\proficiencyext{rust.pdf_tex}{Rust}
+\proficiencyext{nixos.pdf_tex}{NixOS}
+\proficiencyext{linux.pdf_tex}{Linux}
+\proficiencyext{git.pdf_tex}{Git}
+
+\begin{row}
+  \begin{column2}
+    \section{Interests}
+
+    Category Theory and Applied Category Theory, Type Theory and Homotopy Type Theory, Algebraic Topology, Intuitionist Logic, Formal Verification, Algorithms, Differential Geometry, Learning New Things
+  \end{column2}
+  \begin{column2}
+    \section{Miscelaneous}
+
+    I play violin in the Brown University Orchestra as well as chamber groups and pit orchestras, and I swing dance.
+  \end{column2}
+\end{row}
+\end{document}
+
+
+
+
+
+
+
