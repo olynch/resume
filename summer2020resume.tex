@@ -1,0 +1,234 @@
+\documentclass{article} 
+\usepackage[margin=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{Alegreya}
+\usepackage{tikz,tikz-cd}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+}
+
+\renewcommand{\section}[1]{\vspace{0.5em}{\Large \textsc{#1}}}
+\renewcommand{\subsection}[1]{\vspace{0.25em}{\large \textbf{#1}}\vspace{0.25em}}
+\newcommand{\descdate}[2]{#1 \hfill #2\vspace{0.5em}}
+
+\newenvironment{row}{\begin{minipage}[t]{\textwidth}}{\end{minipage}\vspace{0.25em}}
+\newenvironment{column2l}{%
+  \begin{minipage}[t]{0.5\textwidth}%
+    \begin{minipage}[t]{0.95\textwidth}}{%
+    \end{minipage}%
+  \end{minipage}}
+\newenvironment{column2r}{%
+  \begin{minipage}[t]{0.5\textwidth}%
+    \hspace{0.05\textwidth}%
+    \begin{minipage}[t]{0.95\textwidth}}{%
+    \end{minipage}%
+  \end{minipage}}
+\newenvironment{column3}{%
+  \begin{minipage}[t]{0.333\textwidth}%
+    \begin{minipage}[t]{0.9\textwidth}}{%
+    \end{minipage}%
+  \end{minipage}}
+  
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{row}
+  \begin{column2l}
+    \vfill
+    {\huge Owen Lynch}
+  \end{column2l}
+  \begin{column2r} \raggedleft
+    \vfill
+  \texttt{\href{mailto:o.c.lynch@students.uu.nl}{o.c.lynch@students.uu.nl}}, +1 (617) 279-3222 \\
+  \texttt{\href{https://www.linkedin.com/in/owen-lynch-89789b1b6/}{www.linkedin.com/in/owen-lynch-89789b1b6/}}
+  \end{column2r}
+\end{row}
+
+\hrule
+
+\section{Education}
+
+\begin{row}
+  \begin{column2l}
+    \subsection{Utrecht University}
+
+    \descdate{M.Sc Probability and Statistics}{Expected May 2022}
+
+    Awards: Utrecht Excellence Scholarship
+
+    Relevant Coursework: Measure Theoretic Probability, Interacting Particle Systems, Orientation on Mathematical Research (Research Topic: Metastability Through Random Walks)
+
+    \subsection{Budapest Semesters in Mathematics}
+
+    \descdate{Semester Abroad}{Spring 2019}
+
+    Awards: Legmagasabb Kitüntetéssel (highest honors)
+
+    Relevant Coursework: Combinatorics, Conjecture and Proof, Discrete and Convex Geometry, Differential Geometry
+  \end{column2l}
+  \begin{column2r}
+    \subsection{Brown University}
+
+    \descdate{B.Sc Mathematics with Honors, \\ Magna Cum Laude}{Graduated: May 2020}
+
+    Relevant Coursework: Recent Applications of Probability and Statistics (Graduate), Topology 1+2 (Graduate), Algebra 1+2 (Graduate), Algebraic Geometry 1 (Graduate), Algorithms, Functions of Several Variables 1+2
+  \end{column2r}
+\end{row}
+
+\section{Experience}
+
+\begin{row}
+  \begin{column2l}
+    \subsection{Tesla Motors}
+
+    \descdate{Firmware Intern}{May-August 2018}
+
+    Developed interface to query data about the network of the car. Common use case lead to a desire to automate failure analysis using this tool, so designed an algorithm to investigate redundancy in communication buses. All coding done in Haskell.
+  \end{column2l}
+  \begin{column2r}
+    \subsection{New England Complex Systems Institute}
+
+    \descdate{Student Researcher}{Summers 2016,2017,2019}
+
+    Researched and implemented novel techniques in image processing. Wrote large-scale data scraping infrastructure. Helped to migrate large amounts of data. Studied novel information theoretic methods for modeling changes in complex systems. Worked in Python, R, and C.%
+  \end{column2r}
+\end{row}
+
+\begin{row}
+  \begin{column2l}
+    \subsection{Wyzant}
+
+    \descdate{Mathematics and Programming Tutor}{June 2020-}
+
+    Uses mathematical communication skills to help students with homework, and to come up with novel curricula in response to student demand. Takes initiative to mend holes in students' backgrounds.
+  \end{column2l}
+  \begin{column2r}
+    \subsection{Brown University}
+
+    \descdate{Math Resource Center Tutor}{Spring 2017}
+
+    \descdate{Algorithms TA}{Fall 2018}
+
+    \descdate{Information Theory Grader}{Fall 2018}
+
+    \descdate{Probability Grader}{Fall 2019}
+
+    \descdate{Topics in Abstract Algebra TA}{Spring 2020}
+
+    Graded homework and supported students through TA hours.
+  \end{column2r}
+\end{row}
+
+\section{Projects and Writings}
+
+\begin{row}
+  \begin{column2l}
+    \subsection{Catlab.jl}
+
+     Implemented ``Attributed C-sets'', a data structure that generalizes common data structures in scientific computing and code-generates basic operations on those data structure. \href{https://github.com/AlgebraicJulia/Catlab.jl}{Github link}
+  \end{column2l}
+  \begin{column2r}
+    \subsection{Open Systems for the Working Mathematician}
+
+    Undergraduate thesis written under the supervision of Yuri Sulyma, provides a review of current applied category techniques for working with open systems. \href{https://www.brown.edu/academics/math/sites/math/files/O.Lynch%20thesis.pdf}{On Brown math website}
+  \end{column2r}
+\end{row}
+\begin{row}
+  \begin{column2l}
+    \subsection{The Inherent Instability of Disordered Systems}
+
+    Researched a theory of order and stability using entropy, with applications to biology and politics. \href{https://arxiv.org/abs/1812.00450}{arxiv.org/abs/1812.00450}
+  \end{column2l}
+  \begin{column2r}
+    \subsection{Personal Blog}
+
+    Writings on miscellaneous topics, updated semi-regularly. \href{https://owenlynch.org}{owenlynch.org}
+  \end{column2r}
+\end{row}
+\begin{row}
+  \begin{column2l}
+    \subsection{HackMIT 2017}
+
+    With a team of 4, won ``Best Startup Potential'' for a traffic-routing algorithm, which sent us to Vegas. Also won ``Best Moonshot'', and ``Best Use of Location Data''.
+  \end{column2l}
+  \begin{column2r}
+    \subsection{Selected Github Projects}
+
+    \href{https://github.com/olynch/IGE}{IGE}, a keyboard-driven graph editor written in Haskell
+
+    \href{https://github.com/olynch/ez-petri}{EZ Petri}, a Petri net tool in Rust compiled to WASM
+
+    \href{https://github.com/olynch/verylargetrees}{Very Large Trees}, L-systems in Minecraft, \href{https://github.com/olynch/verylargetrees/blob/master/screenshot.png}{Screenshot}
+  \end{column2r}
+\end{row}
+
+% \section{Technical Proficiencies}
+
+% \newcommand{\proficiency}[2]{%
+%   \begin{minipage}[t]{1.6cm}
+%     \centering
+
+%     #1
+    
+%     \vspace{1em}
+
+%     {\large \textbf{#2}}
+%   \end{minipage}\hspace{1em}}
+
+% \newcommand{\proficiencyext}[2]{\proficiency{\def\svgwidth{\textwidth} \input{#1}}{#2}}
+
+% \proficiencyext{haskell.pdf_tex}{Haskell}
+% \proficiencyext{c.pdf_tex}{C/C++}
+% \proficiencyext{python.pdf_tex}{Python}
+% \proficiencyext{rust.pdf_tex}{Rust}
+% \proficiencyext{nixos.pdf_tex}{NixOS}
+% \proficiencyext{linux.pdf_tex}{Linux}
+% \proficiencyext{git.pdf_tex}{Git}
+% \proficiencyext{mathematica.pdf_tex}{Wolfram}
+% \proficiency{\includegraphics[width=\textwidth]{matlab.png}}{Matlab}
+
+\begin{row}
+  \section{Technologies}
+
+  \newcommand{\proficiency}[2]{%
+    \begin{minipage}[t]{1.3cm}
+      \centering
+
+      #1
+
+      \vspace{1em}
+
+      {\large \textbf{#2}}
+    \end{minipage}\hspace{1em}}
+
+  \newcommand{\proficiencyext}[2]{\proficiency{\def\svgwidth{\textwidth} \input{#1}}{#2}}
+
+  \proficiencyext{julia.pdf_tex}{Julia}
+  \proficiencyext{haskell.pdf_tex}{Haskell}
+  \proficiencyext{rust.pdf_tex}{Rust}
+  \proficiencyext{c.pdf_tex}{C/C++}
+  \proficiencyext{python.pdf_tex}{Python}
+  \proficiencyext{R.pdf_tex}{R}
+  \proficiency{\includegraphics[width=\textwidth]{matlab.png}}{Matlab}
+  \proficiencyext{nixos.pdf_tex}{Nix}
+  \proficiencyext{linux.pdf_tex}{Linux}
+  \proficiencyext{git.pdf_tex}{Git}
+\end{row}
+
+\end{document}
+
+
+
+
+
+
+
+
+% Local Variables:
+% TeX-engine: luatex
+% End:
